@@ -2,6 +2,11 @@
 /* BACKGROUND */
 body {
   background-color: #3C1053;
+  background-image: url('./images/portfolio_background.png');
+  background-size: 40%;
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 /* GLOBAL FONT SETTINGS */
