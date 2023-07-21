@@ -13,13 +13,14 @@ const checkScreenSize = () => {
 
   if (window.innerWidth <= 768) {
     hamburger.style.display = 'block';
-    navbar.classList.remove('show'); // Hide the menu on smaller screens initially
+    navbar.classList.add('show'); // Hide the menu on smaller screens initially
   } else {
     hamburger.style.display = 'none';
-    navbar.classList.add('show'); // Show the menu on larger screens
+    navbar.classList.remove('show'); // Show the menu on larger screens
   }
 };
 
-// Call the function on initial page load and whenever the screen is resized
+
 document.addEventListener('DOMContentLoaded', checkScreenSize);
 window.addEventListener('resize', checkScreenSize);
+
