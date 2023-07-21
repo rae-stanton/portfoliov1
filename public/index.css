@@ -16,18 +16,21 @@ h1 {
   font-size: 40px;
   color: #E10098;
   font-style: italic;
+  text-align: center;
 }
 
 h2 {
   font-family: 'Titillium Web', sans-serif;
   font-weight: 300;
   color: #4AC9E3;
+  text-align: center;
 }
 
 h3 {
   font-family: 'Titillium Web', sans-serif;
   font-weight: 300;
   color: #D7A9E3;
+  text-align: center;
 }
 
 /* NAVIGATION */
@@ -71,4 +74,38 @@ a:hover {
 
 .hamburger:hover {
   color: #F4AF23;
+}
+
+/* ABOUT ME CARD */
+
+.card-container {
+  display: flex;
+  justify-content: center; /* Horizontally center the card within the container */
+  align-items: center; /* Vertically center the card within the container */
+}
+
+.card {
+  border-radius: 8px;
+  box-shadow: 0 6px 10px #F4AF23;
+  max-width: 50%;
+  width: 100%;
+  overflow-y: auto;
+  text-align: center;
+  background-color: #fff;
+}
+
+.card-background-image {
+  background-image: url('./images/cardbg2.png');
+  background-size: 95%;
+  background-position: center;
+  height: 60px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  background-repeat: no-repeat;
+  padding: 10px;
+}
+
+.card-content {
+  padding: 10px;
+  text-align: center;
 }
