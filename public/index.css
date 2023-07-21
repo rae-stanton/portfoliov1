@@ -21,7 +21,8 @@ h1 {
 
 h2 {
   font-family: 'Titillium Web', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
+  font-size: 30px;
   color: #4AC9E3;
   text-align: center;
 }
@@ -29,7 +30,16 @@ h2 {
 h3 {
   font-family: 'Titillium Web', sans-serif;
   font-weight: 300;
+  font-size: 20px;
   color: #D7A9E3;
+  text-align: center;
+}
+
+h4 {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  color: #F4AF23;
   text-align: center;
 }
 
@@ -76,7 +86,7 @@ a:hover {
   color: #F4AF23;
 }
 
-/* ABOUT ME CARD */
+/* CARD STYLING */
 
 .card-container {
   display: flex;
@@ -108,4 +118,16 @@ a:hover {
 .card-content {
   padding: 10px;
   text-align: center;
+}
+
+/* social icons */
+.social-icons i {
+  font-size: 30px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  margin: 0 5px;
+}
+.social-icons i:hover {
+  color: #E10098;
 }
