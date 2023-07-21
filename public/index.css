@@ -1,4 +1,62 @@
+
+/* BACKGROUND */
+
+/* GLOBAL FONT SETTINGS */
 h1 {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: purple;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  color: #FF96D0;
+  font-style: italic;
 }
+
+h2 {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 300;
+  color: #3D3D90;
+}
+
+h3 {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 300;
+  color: #45B1E8;
+}
+
+/* NAVIGATION */
+nav {
+  background-color: #3D3D90;
+  padding: 10px;
+  display: flex; /* Use flexbox to align items */
+  justify-content: space-between; /* Pushes items to the edges of the container */
+  align-items: center; /* Centers items vertically */
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: 'Titillium Web';
+}
+
+li {
+  display: inline-block;
+  margin-right: 20px;
+  font-family: 'Titillium Web';
+}
+
+a {
+  color: #fff;
+  font-family: 'Titillium Web';
+  text-decoration: none;
+}
+
+a:hover {
+  border-bottom: 2px solid #fff;
+}
+
+.hamburger {
+  cursor: pointer;
+  color: #FFFF9F;
+}
+
+
