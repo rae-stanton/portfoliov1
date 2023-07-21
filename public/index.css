@@ -131,3 +131,17 @@ a:hover {
 .social-icons i:hover {
   color: #E10098;
 }
+
+/* link to go up to top */
+.home-icon {
+  font-size: 50px;
+  color: #fff;
+  display: flex;
+  justify-content: right;
+  margin: 0 5px;
+  position: sticky;
+}
+
+.home-icon:hover {
+  color: #F4AF23;
+}
