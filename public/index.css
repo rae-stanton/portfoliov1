@@ -139,9 +139,10 @@ a:hover {
   font-size: 50px;
   color: #fff;
   display: flex;
-  justify-content: right;
-  margin: 0 5px;
-  position: sticky;
+  justify-content: flex-end;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
 }
 
 .home-icon:hover {
