@@ -1,8 +1,7 @@
-
 /* BACKGROUND */
 body {
-  background-color: #3C1053;
-  background-image: url('./images/portfolio_background.png');
+  background-color: #3c1053;
+  background-image: url("./images/portfolio_background.png");
   background-size: 40%;
   background-position: bottom left;
   background-repeat: no-repeat;
@@ -11,79 +10,36 @@ body {
 
 /* GLOBAL FONT SETTINGS */
 h1 {
-  font-family: 'Titillium Web', sans-serif;
+  font-family: "Titillium Web", sans-serif;
   font-weight: 600;
   font-size: 40px;
-  color: #E10098;
+  color: #e10098;
   font-style: italic;
   text-align: center;
 }
 
 h2 {
-  font-family: 'Titillium Web', sans-serif;
+  font-family: "Titillium Web", sans-serif;
   font-weight: 400;
   font-size: 30px;
-  color: #4AC9E3;
+  color: #4ac9e3;
   text-align: center;
 }
 
 h3 {
-  font-family: 'Titillium Web', sans-serif;
+  font-family: "Titillium Web", sans-serif;
   font-weight: 300;
   font-size: 20px;
-  color: #D7A9E3;
+  color: #d7a9e3;
   text-align: center;
 }
 
 h4 {
-  font-family: 'Titillium Web', sans-serif;
+  font-family: "Titillium Web", sans-serif;
   font-weight: 300;
   font-size: 15px;
-  color: #F4AF23;
+  color: #f4af23;
   text-align: center;
-}
-
-/* NAVIGATION */
-nav {
-  background-color: #3C1053;
-  padding: 10px;
-  display: flex; /* Use flexbox to align items */
-  justify-content: space-between; /* Pushes items to the edges of the container */
-  align-items: center; /* Centers items vertically */
-}
-
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  font-family: 'Titillium Web';
-}
-
-li {
-  display: inline-block;
-  margin-right: 20px;
-  font-family: 'Titillium Web';
-}
-
-a {
-  color: #fff;
-  font-family: 'Titillium Web';
-  text-decoration: none;
-}
-
-a:hover {
-  border-bottom: 2px dashed #F4AF23;
-  text-transform: none;
-}
-
-.hamburger {
-  cursor: pointer;
-  color: #fff;
-  width: 30px;
-}
-
-.hamburger:hover {
-  color: #F4AF23;
 }
 
 /* CARD STYLING */
@@ -96,7 +52,7 @@ a:hover {
 
 .card {
   border-radius: 8px;
-  box-shadow: 0 6px 10px #F4AF23;
+  box-shadow: 0 6px 10px #f4af23;
   max-width: 50%;
   width: 100%;
   overflow-y: auto;
@@ -105,7 +61,7 @@ a:hover {
 }
 
 .card-background-image {
-  background-image: url('./images/cardbg2.png');
+  background-image: url("./images/cardbg2.png");
   background-size: 95%;
   background-position: center;
   height: 60px;
@@ -131,7 +87,7 @@ a:hover {
   margin: 0 5px;
 }
 .social-icons i:hover {
-  color: #E10098;
+  color: #e10098;
 }
 
 /* link to go up to top */
@@ -146,9 +102,106 @@ a:hover {
 }
 
 .home-icon:hover {
-  color: #F4AF23;
+  color: #f4af23;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+/* NAVIGATION */
+
+nav {
+  background-color: #3c1053;
+  padding: 10px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: "Titillium Web";
+}
+
+li {
+  display: inline-block;
+  margin-right: 20px;
+  font-family: "Titillium Web";
+}
+
+a {
+  color: #fff;
+  font-family: "Titillium Web";
+  text-decoration: none;
+}
+
+a:hover {
+  border-bottom: 2px dashed #f4af23;
+  text-transform: none;
+}
+
+/* HAMBURGER DROPDOWN MENU */
+.hamburger {
+  cursor: pointer;
+  color: #fff;
+  display: none;
+  font-size: 24px;
+}
+
+.hamburger:hover {
+  color: #f4af23;
+}
+
+/* Mobile Menu Styling */
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Media query for small screens (mobile) */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #3c1053;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    padding: 0;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .nav-links a {
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    display: block;
+  }
+  .nav-links a:hover {
+    color: #f4af23;
+    border-bottom: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
 }

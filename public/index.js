@@ -1,26 +1,25 @@
-// script.js
-const toggleMenu = () => {
-  const navbar = document.querySelector('nav ul');
-  navbar.classList.toggle('show');
-};
 
-document.querySelector('.hamburger').addEventListener('click', toggleMenu);
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
 
-// Function to check screen size and display/hide hamburger icon and menu
-const checkScreenSize = () => {
-  const hamburger = document.querySelector('.hamburger');
-  const navbar = document.querySelector('nav ul');
 
-  if (window.innerWidth <= 768) {
-    hamburger.style.display = 'block';
-    navbar.classList.add('show'); // Hide the menu on smaller screens initially
-  } else {
-    hamburger.style.display = 'none';
-    navbar.classList.remove('show'); // Show the menu on larger screens
+hamburger.addEventListener('click', () => {
+  // Toggles the 'active' class on the navigation links
+  navLinks.classList.toggle('active');
+});
+
+
+const navLinksItems = document.querySelectorAll('.nav-links li a');
+navLinksItems.forEach((link) => {
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('active');
+  });
+});
+
+
+document.addEventListener('click', (event) => {
+  const isClickInside = navLinks.contains(event.target) || hamburger.contains(event.target);
+  if (!isClickInside) {
+    navLinks.classList.remove('active');
   }
-};
-
-
-document.addEventListener('DOMContentLoaded', checkScreenSize);
-window.addEventListener('resize', checkScreenSize);
-
+});
