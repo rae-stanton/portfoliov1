@@ -24,6 +24,7 @@ h2 {
   font-size: 30px;
   color: #4ac9e3;
   text-align: center;
+  border-bottom: 2px dotted #f4af23;
 }
 
 h3 {
@@ -214,6 +215,30 @@ a:hover {
   color: #f4af23;
 }
 
+/* smooth scroll */
 html {
   scroll-behavior: smooth;
 }
+
+/* portfolio FA icon */
+.portfolio-icon {
+  color: #E10098;
+  size: 20px;
+}
+
+/* portfolio area */
+.portfolio-link {
+  color: #F4AF23; /* Customize the color for the project links */
+  text-decoration: none; /* Add underline for the links */
+}
+
+.portfolio-link:hover {
+  color: #e10098; /* Customize the link color on hover */
+}
+
+.email-icon {
+  color: #4ac9e3;
+  text-decoration: none;
+  size: 30px;
+}
+
