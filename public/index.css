@@ -41,13 +41,18 @@ h4 {
   color: #f4af23;
   text-align: center;
 }
-
+p {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  color: gray
+}
 /* CARD STYLING */
 
 .card-container {
   display: flex;
-  justify-content: center; /* Horizontally center the card within the container */
-  align-items: center; /* Vertically center the card within the container */
+  justify-content: center;
+  align-items: center;
 }
 
 .card {
