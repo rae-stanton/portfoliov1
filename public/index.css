@@ -79,34 +79,21 @@ h4 {
 }
 
 /* social icons */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .social-icons i {
   font-size: 30px;
   color: #fff;
-  display: flex;
-  justify-content: center;
   margin: 0 5px;
 }
+
 .social-icons i:hover {
   color: #e10098;
-}
-
-/* link to go up to top */
-.home-icon {
-  font-size: 50px;
-  color: #fff;
-  display: flex;
-  justify-content: flex-end;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-}
-
-.home-icon:hover {
-  color: #f4af23;
-}
-
-html {
-  scroll-behavior: smooth;
+  font-size: 35px;
 }
 
 /* NAVIGATION */
@@ -204,4 +191,24 @@ a:hover {
   .nav-links.active {
     display: flex;
   }
+}
+
+
+/* link to go up to top */
+.home-icon {
+  font-size: 50px;
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.home-icon:hover {
+  color: #f4af23;
+}
+
+html {
+  scroll-behavior: smooth;
 }
